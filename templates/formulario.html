@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Personajes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #273c75;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        h1 {
+            color: #2f3640;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.3rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            background-color: #44bd32;
+            color: white;
+            padding: 0.7rem 1.2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #4cd137;
+        }
+
+        footer {
+            margin-top: 2rem;
+            background-color: #dcdde1;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #2f3640;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Formulario de Personajes</h2>
+    </header>
+
+    <div class="container">
+        <h1>Datos Personales</h1>
+        <form method="POST">
+            <label>Nombre:</label><input type="text" name="nombre">
+            <label>Apodo:</label><input type="text" name="apodo">
+            <label>Edad:</label><input type="number" name="edad">
+            <label>Género:</label><input type="text" name="genero">
+            <label>Altura:</label><input type="text" name="altura">
+            <label>Peso:</label><input type="text" name="peso">
+            <label>Color de Cabello:</label><input type="text" name="color_cabello">
+            <label>Color de Ojos:</label><input type="text" name="color_ojos">
+            <label>Complexión:</label><input type="text" name="complexion">
+            <label>Ocupación:</label><input type="text" name="ocupacion">
+            <label>Lugar de Nacimiento:</label><input type="text" name="lugar_nac">
+            <label>Fecha de Nacimiento:</label><input type="text" name="fecha_nac">
+            
+            <button type="submit">Generar Documento</button>
+        </form>
+    </div>
+
+    <footer>
+        <p><strong>Materia:</strong> Administración de Infraestructura Virtualizada II</p>
+        <p><strong>Profesor:</strong> Froylán Alonso Pérez Alanís</p>
+        <p><strong>Alumno:</strong> Mario Eduardo Núñez Zapata</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# -----------------------------------------
+# Materia: Administración de Infraestructura Virtualizada II
+# Profesor: Froylán Alonso Pérez Alanís
+# Alumno: Mario Eduardo Núñez Zapata
+# -----------------------------------------
+
+version: "3.9"
+
+services:
+  flask_app:
+    build: .
+    container_name: flask_personajes
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
